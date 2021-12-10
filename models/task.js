@@ -4,7 +4,7 @@ class Task {
     id = '';
     desc = '';
     completadoEn = null;
-    creadoEn = Date.now(); // Timestamp
+    creadoEn = new Date().toISOString(); // Timestamp
 
     constructor(desc) {
         this.id = v4();

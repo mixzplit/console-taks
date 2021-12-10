@@ -42,7 +42,7 @@ class Tasks {
         ids.forEach(id => {
             const tarea = this.listado[id];
             if (!tarea.completadoEn) {
-                tarea.completadoEn = Date.now();
+                tarea.completadoEn = new Date().toISOString();
             }
         });
 
@@ -99,11 +99,6 @@ class Tasks {
             }
         });
     }
-
-
-
-
-
 
 }
 
